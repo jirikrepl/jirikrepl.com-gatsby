@@ -27,8 +27,6 @@ class SiteLinks extends React.Component {
               <a href={config.siteVkUrl}><i className="fa fa-vk" /></a>
             </li>
           )}
-        </ul>
-        <ul>
           {config.siteEmailUrl && (
             <li>
               <a href={`mailto:${config.siteEmailUrl}`}>

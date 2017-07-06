@@ -42,7 +42,7 @@ class SiteSidebar extends React.Component {
             </header>
           </div>
           <div className="blog-options">
-            <SiteNav {...this.props} />
+            {/* <SiteNav {...this.props} /> */}
             <footer>
               <SiteLinks {...this.props} />
               <p className="copyright">
