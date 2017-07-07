@@ -200,3 +200,23 @@ And this is my ESLint:
     }
 }
 ```
+
+## #5 Load external JavaScript library to Robomongo UI
+Maybe you work with dates in your DB queries, so you would like to load [moment.js](https://momentjs.com/) into your Robomongo client. 
+
+To do it put, put some code in .robomongorc.js file. This file, is loaded by Robomongo during its startup. 
+Look [here](http://blog.robomongo.org/whats-new-in-robomongo-0-8-1/) (in the middle of the post) to see where you can find *.robomongorc.js* file in your OS. 
+
+Mongo has [load function](https://docs.mongodb.com/manual/reference/method/load/) which loads external file:
+
+```javascript
+// .robomongo.js
+
+// use slash on Windows, backslash wouldn't work
+load('C:/moment.js');
+```
+
+
+## #6 Use Meteor plugin for IntelliJ IDEA/Webstorm
+It has great [live templates](https://plugins.jetbrains.com/plugin/7679-meteor-js-template).
+
