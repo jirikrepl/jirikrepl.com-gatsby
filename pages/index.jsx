@@ -37,7 +37,10 @@ class SiteIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={config.siteTitle} />
+        <Helmet title={config.siteTitle}>
+          <meta name="description" content="Helmet application" />
+          <link rel="icon" href="/favicon.png" />
+        </Helmet>
         <SiteSidebar {...this.props} />
         <div className="content">
           <div className="main">
